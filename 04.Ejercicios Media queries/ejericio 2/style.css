@@ -1,0 +1,65 @@
+body {
+  background-color: grey;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.links {
+  background-color: green;
+  width: 25%;
+  height: 100px;
+}
+
+.main {
+  background-color: yellow;
+  width: 50%;
+  margin-left:10px;
+  margin-right: 10px;
+}
+
+.textofoto {
+  display: flex;
+}
+
+.image {
+  width: 50%;
+  height: 20%;
+}
+
+.info {
+  background-color: #4F5140;
+  width: 25%;
+}
+
+@media (max-width: 480px){
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .links, .main, .info {
+    width: 100%;
+  }
+  .image {
+    display: none;
+  }
+}
+
+@media (min-width:481px) and (max-width:1000px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .links {
+    width: 20%;
+  }
+
+  .main, .info {
+    width: 70%;
+
+  }
+}

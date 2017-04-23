@@ -1,0 +1,42 @@
+* {box-sizing: border-box}
+
+body {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background-color: red;
+}
+
+p {
+  margin: 0;
+}
+.content {
+
+  display: flex;
+
+}
+.aside1 {
+  background-color: yellow;
+  width: 25%;
+}
+
+.article {
+  background-color: blue;
+  width: 50%;
+}
+
+.aside2 {
+  background-color: pink;
+  width: 25%;
+}
+.footer {
+  background-color: green;
+}
