@@ -6,7 +6,7 @@ ese número en el array. Por ejemplo, si le pasamos un 1 y [1,3,4,2,1,3,4,5],
 
 var countFives = []
 var number = 5
-var arrayNumbers = [3, 2, 3, 4, 5, 5, 6]
+var arrayNumbers = [3, 2, 5, 4, 5, 5, 6]
 
 function cuentaNumerSos(numero, arrayNumbers) {
     for (var i = 0; i < arrayNumbers.length; i++) {
@@ -39,7 +39,8 @@ function caracterCentral(cadena) {
 }
 
 var center = caracterCentral(cadena)
-console.log(center);
+console.log("El caracter central de "+ cadena + " es " + center);
+
 
 /*Ejercicio 3
 Vamos a crear una función que toma un parámetro que es un array de números.
@@ -51,15 +52,14 @@ function encuentraPares(numbers) {
     for (var i = 0; i < numbers.length; i++) {
         if (numbers[i] % 2 === 0) {
             pairNumbers[pairNumbers.length] = numbers[i];
+            //esto también se puede hacer: pares.push(numeros[i])
         }
     }
     return pairNumbers;
 }
 
-function exercise() {
-    var numbers = [2, 3, 4, 6, 7, 5, 2];
-    var pairNumbers = encuentraPares(numbers);
-    console.log(pairNumbers);
-}
+var numbers = [1, 3, 0, 6, 4, 7, 5, 2];
+var pairNumbersArray = encuentraPares(numbers);
+console.log(pairNumbersArray);
 
-exercise();
+//toda ésta última parte se puede resumur en: console.log (encuantraPares ([1, 3, 0, 6, 7, 5, 2]));
