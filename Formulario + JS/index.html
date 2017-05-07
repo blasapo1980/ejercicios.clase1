@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <form class="" action="index.html" method="post">
+      <legend class="legend">Create an account</legend>
+      <p>Itś free and always will be.</p>
+
+      <input class="size1-2 row" id="js-name" type="text" name="name" placeholder="First name" value="">
+      <input class="size1-2 row" type="text" name="surname" placeholder="Surname" value="">
+
+      <input class="size1" class="block mail1" id=js-mail type="email" value="" placeholder="Email or phone" name="Email"/>
+      <input class="size1" class="block mail2" id=js-re-mail type="email" value="" placeholder="Re-enter yout email or phone" name="Re enter yout email or phone" />
+
+      <input class="block" type="password" value="password" name="password"/><br>
+
+      <span class="birth">
+          <label  for=date>Birthday</label><br>
+          <select id=js-birthdayDay name="day" title="day">
+            <option value="day">day</option>
+          </select>
+          <select id=js-birthdayMonth name="month" title="month">
+            <option value="month">Month</option>
+          </select>
+          <select id=js-birthdayYear name="year" title="year">
+            <option value="year">year</option>
+          </select>
+        </span>
+        <span>
+          <a class="row little" href="#">Why do I need to provide my date os birth?</a><br>
+        </span>
+
+
+      <label class="row">Hombre:
+          <input type="radio" value="radio1" name="radiogroup" /></label>
+      <label>Mujer:
+          <input type="radio" value="radio2" name="radiogroup" /></label>
+
+      <p class="little">By cliking Create an account, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Politicy</a>, including our <a href="#">Cookie Use</a></p>
+      <input class="submit" type="button" name="button" value="Create an account">
+    </form>
+    <script src="main.js" charset="utf-8"></script>
+    <p id = js-error></p>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+form {
+  background-color: #DBF5ED;
+  max-width: 400px;
+
+}
+
+.legend {
+  font: bold;
+  font-size: 2em;
+}
+
+.row {
+  display: inline;
+}
+
+.size1-2 {
+  width: 49%;
+}
+
+.size1 {
+  width: 100%;
+}
+
+input {
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 4px;
+
+}
+
+.little {
+  font-size: 0.7em;
+}
+
+a{
+  text-decoration: none;
+}
