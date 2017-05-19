@@ -1,0 +1,26 @@
+header {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.menu-full-screen {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+  font-family: $font-family-paragraph;
+  padding: 5px;
+}
+
+@media screen and (min-width: $mobile-size) {
+  .menu-full-screen {
+    display: flex;
+  }
+}

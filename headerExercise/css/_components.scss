@@ -1,0 +1,15 @@
+img {
+  width: 50px;
+}
+
+.btn-menu {
+  margin-right: 10px;
+  background: none;
+  border: none;
+}
+
+@media screen and (min-width: $mobile-size) {
+  .btn-menu {
+    display: none;
+  }
+}

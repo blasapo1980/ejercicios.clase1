@@ -3,6 +3,46 @@ h1 {
   font-family: "Ubuntu", sans-serif;
   margin-left: 5px; }
 
+p {
+  text-align: justify; }
+
+.show-menu {
+  background-color: #3AC3CB;
+  display: none;
+  text-align: right;
+  -webkit-animation-name: opacityMenu;
+          animation-name: opacityMenu;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
+
+.open-menu {
+  margin-top: 0; }
+
+@-webkit-keyframes opacityMenu {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes opacityMenu {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@media screen and (min-width: 480px) {
+  .show-menu {
+    display: none; } }
+img {
+  width: 50px; }
+
+.btn-menu {
+  margin-right: 10px;
+  background: none;
+  border: none; }
+
+@media screen and (min-width: 480px) {
+  .btn-menu {
+    display: none; } }
 header {
   background-color: #3AC3CB;
   display: -webkit-box;
@@ -27,44 +67,7 @@ li {
   font-family: "Lora", serif;
   padding: 5px; }
 
-img {
-  width: 50px; }
-
-.btn-menu {
-  margin-right: 10px;
-  background: none;
-  border: none; }
-
-.show-menu {
-  background-color: #3AC3CB;
-  display: none;
-  text-align: right;
-  -webkit-animation-name: opacityMenu;
-          animation-name: opacityMenu;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s; }
-
-.open-menu {
-  margin-top: 0; }
-
-p {
-  text-align: justify; }
-
-@-webkit-keyframes opacityMenu {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-@keyframes opacityMenu {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@media screen and (min-width: 580px) {
-  .show-menu, .btn-menu {
-    display: none; }
-
+@media screen and (min-width: 480px) {
   .menu-full-screen {
     display: -webkit-box;
     display: -ms-flexbox;
